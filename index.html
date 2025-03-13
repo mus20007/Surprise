@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Lock Screen</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Lock Screen -->
+    <div class="lock-screen" id="lockScreen">
+        <div class="image-placeholder">
+            <img src="image\1.jpg" alt="Profile Image">
+        </div>
+        <div class="password-display" id="passwordDisplay">Enter Password</div>
+        <div class="keypad">
+            <button class="key" onclick="appendNumber('1')">1</button>
+            <button class="key" onclick="appendNumber('2')">2</button>
+            <button class="key" onclick="appendNumber('3')">3</button>
+            <button class="key" onclick="appendNumber('4')">4</button>
+            <button class="key" onclick="appendNumber('5')">5</button>
+            <button class="key" onclick="appendNumber('6')">6</button>
+            <button class="key" onclick="appendNumber('7')">7</button>
+            <button class="key" onclick="appendNumber('8')">8</button>
+            <button class="key" onclick="appendNumber('9')">9</button>
+            <button class="key" onclick="clearPassword()">C</button>
+            <button class="key" onclick="appendNumber('0')">0</button>
+            <button class="key" onclick="submitPassword()">✓</button>
+        </div>
+    </div>
+
+    <!-- Second Page (Envelope and Photos) -->
+    <div class="envelope-page" id="envelopePage">
+        <div class="mail-solid icon"></div>
+        <div class="mail-solid icon"></div>
+        <div class="mail-solid icon"></div>
+        <div class="mail-solid icon"></div>
+        <div class="mail-solid icon"></div>
+        <div class="mail-solid icon"></div>
+        <div class="mail-solid icon"></div>
+        <div class="photo-frame left-photo"><div class="mail-solid icon"></div>
+            <img src="image/2.jpg" alt="Left Photo">
+        </div>
+        <div class="envelope-container">
+            <div class="envelope">
+                <div class="envelope-flap"></div>
+                <div class="letter" id="letter">
+                    <div class="letter-content">
+                        <p>Hello Nabi,</p>
+                        <p>i just wanted to say that you are doing amazing ^^</p>
+                        <p>
+                            You have a beautiful soul, so never let anything change that. keep being awesome and lovely<3</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="photo-frame right-photo">
+            <img src="image/3.jpg" alt="Right Photo">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

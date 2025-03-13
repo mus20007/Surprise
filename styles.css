@@ -1,0 +1,212 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Lock Screen Styles */
+.lock-screen {
+    width: 300px;
+    height: 450px;
+    background-color: #fd89c3; /* Pink color */
+    border: 4px solid #004080;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.image-placeholder {
+    width: 200px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.password-display {
+    width: 80%;
+    height: 50px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 80%;
+}
+
+.key {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.key:hover {
+    background-color: #0056b3;
+}
+
+.key:active {
+    background-color: #004080;
+}
+
+/* Envelope Page Styles */
+.envelope-page {
+    display: none; /* Hidden by default */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #f0f0f0;
+}
+
+
+.envelope {
+    width: 300px;
+    height: 200px;
+    background-color: #66a9da;
+    border: 2px solid #d24e96;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: -50px;
+}
+.mail-solid.icon {
+    color: #d355ae;
+    position: relative;
+    order: 1;
+    display: flex;
+    margin-left: 2px;
+    margin-top: 4px;
+    width: 15px;
+    height: 10px;
+    border-radius: 1px;
+    border: solid 1px currentColor;
+    background-color: currentColor;
+    top: -150px;
+    left: -430px;
+  }
+  
+  .mail-solid.icon:before {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: -4px;
+    width: 1px;
+    height: 10px;
+    color: white;
+    background-color: currentColor;
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+    -webkit-transform: rotate(-54deg);
+            transform: rotate(-54deg);
+  }
+  
+  .mail-solid.icon:after {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: -4px;
+    width: 1px;
+    height: 10px;
+    color: white;
+    background-color: currentColor;
+    -webkit-transform-origin: bottom;
+            transform-origin: bottom;
+    -webkit-transform: rotate(54deg);
+            transform: rotate(54deg);
+  }
+  
+  
+
+.letter {
+    width: 95%;
+    height: 85%;
+    background-color: #ea76cf;
+    border: 1px solid p#eb5cf3;
+    border-radius: 5x;
+    position: absolute;
+    bottom: -100%; /* Start hidden below the envelope */
+    animation: slideUp 1.5s forwards;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.letter-content {
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+}
+/* Photo Frame Styles */
+.photo-frame {
+    width: 150px;
+    height: 200px;
+    background-color: #fff;
+    border: 10px solid #d4af37; /* Gold frame */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.left-photo {
+    margin-right: 10px; /* Space between left photo and envelope */
+}
+
+.right-photo {
+    margin-left: 100px; /* Space between right photo and envelope */
+}
+
+/* Animation for the letter */
+@keyframes slideUp {
+    0% {
+        bottom: -100%;
+    }
+    100% {
+        bottom: 10%;
+    }
+}
