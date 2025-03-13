@@ -202,28 +202,11 @@ body {
 }
 
 /* Animation for the letter */
-keyframes slideUp {
+@keyframes slideUp {
     0% {
         bottom: -100%;
     }
     100% {
         bottom: 10%;
-    }
-}
-
-/* Media Queries for Mobile Devices */
-media (max-width: 768px) {
-    .envelope-page {
-        flex-direction: column; /* Stack elements vertically */
-    }
-
-    .photo-frame {
-        width: 100%; /* Full width on small screens */
-        max-width: 150px; /* Limit maximum width */
-    }
-
-    .envelope {
-        width: 100%; /* Full width on small screens */
-        max-width: 300px; /* Limit maximum width */
     }
 }
